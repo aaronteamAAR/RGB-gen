@@ -1,0 +1,33 @@
+.card{
+    width: 15rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #1f2937;
+    padding: 30px 20px;
+}
+
+
+.sliders{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.output-box{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: 1rem;
+}
+
+.output{
+    border: 2px solid;
+    padding:6px 20px;
+}
+
+.copy-btn{
+    cursor: pointer
+    padding 12px;
+    background: #111827;
+}
