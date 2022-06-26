@@ -22,8 +22,31 @@
         </div>
         <div class="output-box">
             <div class="output" id="output">rgba(0,0,0,1)</div>
-            <div class="copy-btn" onclick="copy()"><i class="fa fa-clone" aria-hidden="true"></i></div>
+            <div class="copy-btn" onclick="copy()"><button>yes</button></div>
         </div>
     </div>
 </body>
+<script>
+    const generateRGBA = () => {
+    let red = document.getElementById("red").value;
+    let green = document.getElementById("green").value;
+    let blue = document.getElementById("blue").value;
+    let alpha = document.getElementById("alpha").value;
+    let output = document.getElementById("output");
+
+
+    output.innerText = `rgba(${red}, ${green}, ${blue}, ${alpha})`
+output.style.background = `rgba(${red}, ${green}, ${blue}, ${alpha})`
+}
+
+
+const copy = () => {
+    let output = document.getElementById("output")
+
+    navigator.clipboard.writeText(output.innerText) 
+    alert("copied")
+}
+
+
+</script>
 </html>
